@@ -2,6 +2,7 @@ FROM dockerfile/java
 MAINTAINER Michael Petychakis <mpetyx@gmail.com>
 
 # Setting up the python environment
+RUN apt-get update
 RUN apt-get install -y python-pip
 RUN apt-get install -y git
 RUN apt-get install -y libpq-dev python-dev
