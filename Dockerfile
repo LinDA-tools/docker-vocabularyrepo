@@ -130,4 +130,5 @@ RUN nohup /elasticsearch/bin/elasticsearch & \
 	python3 /LinDAWorkbench/linda/manage.py loaddata /LinDAWorkbench/linda/linda_app/installer/data/vocabularies.json
 	
 ADD all-commands.sh /all-commands.sh
+RUN chmod +x /*.sh
 CMD /all-commands.sh
