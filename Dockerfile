@@ -104,6 +104,8 @@ RUN apt-get install -y libxml2-dev libxslt1-dev python-dev
 RUN apt-get install -y libjpeg-dev
 RUN easy_install3 pip
 
+# Explicitly install gcc
+RUN apt-get install gcc
 RUN pip install -r /LinDAWorkbench/requirements.txt
 
 # Clone transformation app
